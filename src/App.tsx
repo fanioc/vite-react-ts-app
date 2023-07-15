@@ -1,35 +1,28 @@
-import React, { Component } from "react";
-import type { MChartRef } from "mchart";
+import React, { useEffect, useMemo, useState } from "react";
+import styles from "./index.module.less";
+import Demo from "./demo";
+let mockMonth = 7;
 
-export default class App extends Component<
-  {},
-  { jsx: React.ReactNode | null }
-> {
-  state = {
-    jsx: null,
-  };
-  ref = React.createRef<MChartRef>();
+export default () => {
+  const [count, setCount] = useState(0);
 
-  componentDidMount() {
-    import("mchart").then(({ Bar }) => {
-      this.setState({
-        jsx: (
-          <Bar
-            ref={this.ref}
-            name="123"
-            data={[1, 2, 3, 4, 5, 6, 7]}
-            option={{
-              xAxis: {
-                data: ["a", "b", "c", "d", "e", "f"],
-              },
-            }}
-          />
-        ),
-      });
-    });
-  }
+  const jsx = useMemo(
+    () => (
+      <div>
+        <input />
+        {count}
+      </div>
+    ),
+    [count]
+  );
 
-  render() {
-    return <div className="App">{this.state.jsx}</div>;
-  }
-}
+  return (
+    <>
+      <div className={styles.test}>
+        <button onClick={(e) => setCount((v) => v + 1)}>setData</button>
+      </div>
+      {jsx}
+      <Demo />
+    </>
+  );
+};
