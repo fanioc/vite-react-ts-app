@@ -706,18 +706,18 @@
     "@babel/runtime" ">=7"
     zrender "^5.4.1"
 
-"@mchart/pc-react@^1.2.0-beta.9":
-  version "1.2.0-beta.9"
-  resolved "https://npm.corp.kuaishou.com/@mchart/pc-react/-/@mchart/pc-react-1.2.0-beta.9.tgz#b2540586526cadf04286748c87ef48aa69214a97"
-  integrity sha512-HG3Y0/1MAIL+t1I9NanVygVAeVqQ7XfzQok91kMpoPUmPLmSicmjKSUYHkOswowGRzG0ByI6c3s2Zbiy5sreSw==
+"@mchart/pc-react@^1.4.7":
+  version "1.4.7"
+  resolved "https://npm.corp.kuaishou.com/@mchart/pc-react/-/@mchart/pc-react-1.4.7.tgz#346ae242bc7f4213cf75cf018ffae4076b521c14"
+  integrity sha512-RhJ3zA7nYg5SDUNWFjmK2hpYgNH89fzguGjei34anxjO/mNz4RnRlTaKZvPkj77pc9UAii0gUDW3h8BjsR4GmQ==
   dependencies:
-    "@babel/runtime" ">=7"
+    "@babel/runtime" "^7.0.0"
     "@mchart/shared" "^1.1.2"
-    echarts "^5.3.2"
+    echarts "^5.4.0"
     resize-observer-polyfill ">=1"
     stats.js "^0.17.0"
-    topojson "^3.0.2"
-    zrender "^5.3.1"
+    topojson-client "3.1.0"
+    zrender "^5.4.0"
 
 "@mchart/shared@^1.1.2":
   version "1.1.2"
@@ -1450,21 +1450,13 @@ dotenv@^16.0.3:
   resolved "https://npm.corp.kuaishou.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
   integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
-echarts@>=5:
-  version "5.2.2"
-  resolved "https://npm.corp.kuaishou.com/echarts/-/echarts-5.2.2.tgz#ec3c8b2a151cbba71ba3c2c7cf9b2f2047ce4370"
-  integrity sha1-7DyLKhUcu6cbo8LHz5svIEfOQ3A=
+echarts@^5.4.0, echarts@^5.4.3:
+  version "5.4.3"
+  resolved "https://npm.corp.kuaishou.com/echarts/-/echarts-5.4.3.tgz#f5522ef24419164903eedcfd2b506c6fc91fb20c"
+  integrity sha512-mYKxLxhzy6zyTi/FaEbJMOZU1ULGEQHaeIeuMR5L+JnJTpz+YR03mnnpBhbR4+UYJAgiXgpyTVLffPAjOTLkZA==
   dependencies:
     tslib "2.3.0"
-    zrender "5.2.1"
-
-echarts@^5.3.2:
-  version "5.4.2"
-  resolved "https://npm.corp.kuaishou.com/echarts/-/echarts-5.4.2.tgz#9f38781c9c6ae323e896956178f6956952c77a48"
-  integrity sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==
-  dependencies:
-    tslib "2.3.0"
-    zrender "5.4.3"
+    zrender "5.4.4"
 
 electron-to-chromium@^1.3.811:
   version "1.3.826"
@@ -2133,11 +2125,6 @@ load-tsconfig@^0.2.3:
   resolved "https://npm.corp.kuaishou.com/load-tsconfig/-/load-tsconfig-0.2.5.tgz#453b8cd8961bfb912dea77eb6c168fe8cca3d3a1"
   integrity sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg==
 
-lodash-es@>=4:
-  version "4.17.21"
-  resolved "https://npm.corp.kuaishou.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
-  integrity sha1-Q+YmxG5lkbd1C+srUBFzkMYJ4+4=
-
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://npm.corp.kuaishou.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
@@ -2177,16 +2164,6 @@ markdown-extensions@^1.0.0:
   version "1.1.1"
   resolved "https://npm.corp.kuaishou.com/markdown-extensions/-/markdown-extensions-1.1.1.tgz#fea03b539faeaee9b4ef02a3769b455b189f7fc3"
   integrity sha1-/qA7U5+urum07wKjdptFWxiff8M=
-
-mchart@^0.1.3-beta.6:
-  version "0.1.3-beta.6"
-  resolved "https://npm.corp.kuaishou.com/mchart/-/mchart-0.1.3-beta.6.tgz#bc1cf4492b7ec898c221c47a45e52454005d34f0"
-  integrity sha512-ZcVl+GTlXjvyvNL0p7vbQn07JdvquMI/yKzCN+IfiLBtsfj9mZe6wvYf8FiHl5jnXYNC34LVkQ4lEz4Sjh5+ig==
-  dependencies:
-    "@babel/runtime" ">=7"
-    echarts ">=5"
-    lodash-es ">=4"
-    resize-observer-polyfill ">=1"
 
 mdast-util-definitions@^5.0.0:
   version "5.1.0"
@@ -3800,43 +3777,12 @@ toggle-selection@^1.0.6:
   resolved "https://npm.corp.kuaishou.com/toggle-selection/-/toggle-selection-1.0.6.tgz#6e45b1263f2017fa0acc7d89d78b15b8bf77da32"
   integrity sha512-BiZS+C1OS8g/q2RRbJmy59xpyghNBqrr6k5L/uKBGRsTfxmu3ffiRnd8mlGPUVayg8pvfi5urfnu8TU7DVOkLQ==
 
-topojson-client@3:
+topojson-client@3.1.0:
   version "3.1.0"
   resolved "https://npm.corp.kuaishou.com/topojson-client/-/topojson-client-3.1.0.tgz#22e8b1ed08a2b922feeb4af6f53b6ef09a467b99"
   integrity sha512-605uxS6bcYxGXw9qi62XyrV6Q3xwbndjachmNxu8HWTtVPxZfEJN9fd/SZS1Q54Sn2y0TMyMxFj/cJINqGHrKw==
   dependencies:
     commander "2"
-
-topojson-client@3.0.0:
-  version "3.0.0"
-  resolved "https://npm.corp.kuaishou.com/topojson-client/-/topojson-client-3.0.0.tgz#1f99293a77ef42a448d032a81aa982b73f360d2f"
-  integrity sha512-2phZ98wg/iKvsWxbB6JQcq0/N0f+sRx8ZogdvjCg+CjaJdmV0knP0OQwK5XbgnytAPx5lPZk41kiWpgH2w9FHg==
-  dependencies:
-    commander "2"
-
-topojson-server@3.0.0:
-  version "3.0.0"
-  resolved "https://npm.corp.kuaishou.com/topojson-server/-/topojson-server-3.0.0.tgz#378e78e87c3972a7b5be2c5d604369b6bae69c5e"
-  integrity sha512-UhhwQk4e2+lwhAVYkja3J5nQHQmKwORDuIQPkMnFFZFcLqWKLQWI3u7fZWtNIXTElBjTYdBUL1kzi1+oS/qDQw==
-  dependencies:
-    commander "2"
-
-topojson-simplify@3.0.2:
-  version "3.0.2"
-  resolved "https://npm.corp.kuaishou.com/topojson-simplify/-/topojson-simplify-3.0.2.tgz#8a2403e639531500fafa0c6594e8b0fadebc2c02"
-  integrity sha512-gyYSVRt4jO/0RJXKZQPzTDQRWV+D/nOfiljNUv0HBXslFLtq3yxRHrl7jbrjdbda5Ytdr7M8BZUI4OxU7tnbRQ==
-  dependencies:
-    commander "2"
-    topojson-client "3"
-
-topojson@^3.0.2:
-  version "3.0.2"
-  resolved "https://npm.corp.kuaishou.com/topojson/-/topojson-3.0.2.tgz#fcb927306c3e0fa76656fa58deed4555d2346fb4"
-  integrity sha512-u3zeuL6WEVL0dmsRn7uHZKc4Ao4gpW3sORUv+N3ezLTvY3JdCuyg0hvpWiIfFw8p/JwVN++SvAsFgcFEeR15rQ==
-  dependencies:
-    topojson-client "3.0.0"
-    topojson-server "3.0.0"
-    topojson-simplify "3.0.2"
 
 tr46@^1.0.1:
   version "1.0.1"
@@ -4127,14 +4073,14 @@ yaml@^1.10.2:
   resolved "https://npm.corp.kuaishou.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
-zrender@5.2.1:
-  version "5.2.1"
-  resolved "https://npm.corp.kuaishou.com/zrender/-/zrender-5.2.1.tgz#5f4bbda915ba6d412b0b19dc2431beaad05417bb"
-  integrity sha1-X0u9qRW6bUErCxncJDG+qtBUF7s=
+zrender@5.4.4, zrender@^5.4.0:
+  version "5.4.4"
+  resolved "https://npm.corp.kuaishou.com/zrender/-/zrender-5.4.4.tgz#8854f1d95ecc82cf8912f5a11f86657cb8c9e261"
+  integrity sha512-0VxCNJ7AGOMCWeHVyTrGzUgrK4asT4ml9PEkeGirAkKNYXYzoPJCLvmyfdoOXcjTHPs10OZVMfD1Rwg16AZyYw==
   dependencies:
     tslib "2.3.0"
 
-zrender@5.4.3, zrender@^5.3.1, zrender@^5.4.1:
+zrender@^5.4.1:
   version "5.4.3"
   resolved "https://npm.corp.kuaishou.com/zrender/-/zrender-5.4.3.tgz#41ffaf835f3a3210224abd9d6964b48ff01e79f5"
   integrity sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==
