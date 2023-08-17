@@ -11,7 +11,7 @@
     "@m-ui-next/react": "^0.0.5-alpha.10",
     "@m-ui/react": "^1.12.1",
     "@mchart/karia-react": "^0.0.1",
-    "@mchart/pc-react": "^1.4.7",
+    "@mchart/pc-react": "^1.4.8",
     "@mdx-js/loader": "^2.0.0",
     "@mdx-js/react": "^2.0.0",
     "@mdx-js/rollup": "^2.0.0",

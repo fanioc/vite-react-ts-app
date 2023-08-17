@@ -245,7 +245,10 @@ const ChartDemo = () => {
               const goodsId = parentGroup.name.split("-")[1];
               const rect = parentGroup.getBoundingRect();
               // showTooltip
-              chartTooltip.current?.setPosition({ x: rect.x + 8, y: 45 });
+              chartTooltip.current?.setPosition({
+                x: rect.x + rect.width / 2,
+                y: 45,
+              });
               chartTooltip.current?.setVisible(true);
             } else {
               // hideTooltip
@@ -258,9 +261,10 @@ const ChartDemo = () => {
       </Line>
       <div
         style={{
-          flex: "0 0 200px",
+          flex: "0 0 100px",
           paddingTop: 45,
           marginLeft: 16,
+          paddingRight: 16,
           maxHeight: 600,
           overflow: "auto",
         }}

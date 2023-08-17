@@ -706,10 +706,10 @@
     "@babel/runtime" ">=7"
     zrender "^5.4.1"
 
-"@mchart/pc-react@^1.4.7":
-  version "1.4.7"
-  resolved "https://npm.corp.kuaishou.com/@mchart/pc-react/-/@mchart/pc-react-1.4.7.tgz#346ae242bc7f4213cf75cf018ffae4076b521c14"
-  integrity sha512-RhJ3zA7nYg5SDUNWFjmK2hpYgNH89fzguGjei34anxjO/mNz4RnRlTaKZvPkj77pc9UAii0gUDW3h8BjsR4GmQ==
+"@mchart/pc-react@^1.4.8":
+  version "1.4.8"
+  resolved "https://npm.corp.kuaishou.com/@mchart/pc-react/-/@mchart/pc-react-1.4.8.tgz#fb3a888501b14e65f015594c2cf4368b617ad702"
+  integrity sha512-yNluBA5ARk5fuhejWqtCfgobwzVOrUaPSMcazqkYA71w4LjYgo/y+oBpvju7aw34mY9+pEMWwHgb0IrC0PNkRA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@mchart/shared" "^1.1.2"
